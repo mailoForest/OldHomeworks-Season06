@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+body {
+	width: 300px;
+	height: 300px;
+}
+header {
+	height: 9%;
+	background: #090282;	
+}
+#left-div {
+	height: 80%;
+	width: 30%;
+	float: left;
+	background: #b300b3;
+	margin-top: 1.5%;
+}
+#right-div {
+	height: 80%;
+	width: 68%;
+	float: right;
+	background: #008040;
+	margin-top: 1.5%;
+}
+div {
+	background: #0080ff;
+	height: 9%;
+	margin-top: 83.5%;
+}

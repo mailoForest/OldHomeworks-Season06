@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+header {
+	height: 20px;
+	background: #090282;	
+}
+#left-div {
+	height: 200px;
+	width: 300px;
+	float: left;
+	background: #970097;
+	margin-top: 5px;
+}
+#middle-div {
+	height: 200px;
+	width: 713px;
+	background: #008000;
+	margin: 5px 0px 5px 18px;
+	float: left;
+}
+#right-div {
+	height: 200px;
+	width: 300px;
+	float: right;
+	background: #ff0006;
+	margin-top: 5px;
+}
+div {
+	background: #0065ca;
+	height: 20px;
+	margin-top: 210px;
+}

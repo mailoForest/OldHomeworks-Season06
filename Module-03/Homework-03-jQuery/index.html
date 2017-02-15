@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+	<p>i am a paragraph</p>
+	<p>i am a paragraph</p>
+	<p>i am a paragraph</p>
+	
+	<script>
+	 	var $j = jQuery.noConflict();
+	 	$j(function (){
+	 		console.log('loaded');
+		 	$('p').attr('test-attribute', 'test-value');
+		 	var attributes = {a:1, b:2, c:3};
+		 	$('p').attr(attributes)
+	 	})
+	</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.dark {
+  background-color: #0f0fff;
+  padding: 0.3em; }
+  .dark p {
+    color: #ffffff; }
+    .dark p span {
+      color: #0f0fff;
+      background-color: #ffffff; }
+  .dark:after {
+    content: 'Test'; }
+
+.gradient {
+  background: #0f0fff;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #0f0fff, #ffffff);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, #0f0fff, #ffffff);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, #0f0fff, #ffffff);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(left, #0f0fff, #ffffff);
+  /* Standard syntax */
+  width: 1000px;
+  height: 200px;
+  margin-top: 0.3em; }
+
+.theme-light {
+  color: #0f0fff;
+  background-color: #ffffff;
+  border: 1px solid #0f0fff; }
+
+.theme-dark, .example {
+  color: #ffffff;
+  background-color: #0f0fff;
+  border: 1px solid #ffffff; }
+
+.example {
+  width: 200px;
+  height: 200px; }
+
+/*# sourceMappingURL=style.css.map */

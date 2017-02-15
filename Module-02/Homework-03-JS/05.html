@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sphere volume</title>
+<style type="text/css">
+	div{display: block; }
+	label{font-size: 2em;}
+	button{border-radius: 5px; margin: 5px; font-size: 1.5em;}
+	output, input{border: 1px inset; width: 25.8%; height: 1em; display: block; padding: 3px; font-size: 1.5em;}
+	body {
+		background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Esfera_Arqu%C3%ADmedes0.svg/850px-Esfera_Arqu%C3%ADmedes0.svg.png");
+		background-size: 42em 42em;
+	}
+</style>
+</head>
+<body>
+	<form action="">
+		<div><label>Radius:</label></div>
+		<div><input type="text" id="input" placeholder="lenght of a radius"></div>
+		<div><label>Volume:</label></div>
+		<div><output id="output"></output></div>
+		<div><button type="button" onclick="sphere(radius)">Calculate</button></div>
+		
+	</form>
+	<script type="text/javascript">	
+		var radius = 0;
+		var result = 0;
+	
+		function sphere (r) {
+			radius = document.getElementById('input').value;
+			radius = parseFloat(radius);
+			
+			if (isNaN(radius) || radius < 0) {
+		       result = "Input not valid";
+		    } else {
+		    	result = Math.PI*4/3*Math.pow(r,3);
+		    }
+			document.getElementById('output').innerHTML = result; 
+		}
+	</script>
+</body>
+</html>

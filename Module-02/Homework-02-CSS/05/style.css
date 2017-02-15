@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+body {
+	margin: 0px;
+}
+#head {
+	background: #005c99;
+	color: white;
+	margin-top: 0px;
+	padding-left: 25px;
+}
+#subhead, div * {
+	padding-left:5px;
+}
+body > div, #subhead {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+div {
+	border: 1px solid green;
+	background: #faf2da;
+	margin-bottom: 10px;
+}
+div h4 {
+	background: green;
+	color: white;
+	margin: 0px ;
+}
+div p {
+	margin-top: 1px;
+}
+div footer {
+	opacity: 0.5
+}
+a {
+	padding: 0px;
+}

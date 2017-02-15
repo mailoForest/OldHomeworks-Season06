@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>events practice</title>
+<style>
+	div{margin: 1px;}
+</style>
+</head>
+<body >
+<button id="btn">Some text</button>
+<script type="text/javascript">
+	function addElement (element) {
+		var newElement = document.createElement(element);
+		document.querySelector('body').appendChild(newElement);
+	}
+	
+	var i = 0;
+	
+	function makeSquare(){
+		
+		addElement("div");
+		
+		var square = document.querySelectorAll("div")[i]
+		setId = 'div'+i;
+		square.setAttribute('id', setId);
+		
+		i++;
+		
+		square.style.width = 100 + 'px';
+		square.style.height = 100 + 'px';
+		square.style.background = 'red';
+	}
+	
+	//makes a red square when the page is loaded
+	document.querySelector('body').addEventListener('load', makeSquare());
+	
+	//makes a button that alerts its own innerHTML 
+	document.getElementById('btn').addEventListener('click', function(){
+		textNode = document.getElementById("btn").innerHTML;
+		alert(textNode);
+	});
+	
+	function makeElementGreenOrRed(id) {
+		
+		document.getElementById(id).addEventListener('mouseover', function(){
+			document.getElementById(id).style.background = 'green';
+		});
+		
+		document.getElementById(id).addEventListener('mouseleave', function(){
+			document.getElementById(id).style.background = 'red';
+		});
+	}
+	
+	//changes the first square
+	makeElementGreenOrRed(setId); 
+	
+	//makes and changes new added squares
+	document.querySelector('div').addEventListener('click', function(){
+		makeSquare(); makeElementGreenOrRed(setId);
+	});
+</script>
+</body>
+</html>

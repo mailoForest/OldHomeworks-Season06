@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+#roulette{
+  background-image: url(file:///C:/xampp/htdocs/PHP/Homework-10-CSS/08/roulette.png);
+  background-size: 390px 410px;
+  background-repeat: no-repeat;
+  background-position: 28px 18px;
+  width:500px;
+  height:446px;
+  margin:0;
+}
+.circle {
+  border-radius:50%;
+  height: 20px;
+  width: 20px;
+  margin:0;
+  background: radial-gradient(circle at 65px 20px, #FFFFFF, #000000);
+}
+@-webkit-keyframes spinnerRotate
+{
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+.circleContainer{
+    height: 300px;
+    top: 85px;
+    position: fixed;
+    left: 220px;  
+    -webkit-animation-name: spinnerRotate;
+    -webkit-animation-duration: 3.5s;
+    -webkit-animation-iteration-count: 3;
+    -webkit-animation-timing-function: linear;
+}

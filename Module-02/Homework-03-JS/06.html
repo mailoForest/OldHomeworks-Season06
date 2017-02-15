@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	var array = ["0.jpg","1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.png", "6.jpg", "7.png", "8.jpg", "9.jpg"];
+	function generateSource(){
+		return "images/" + array[Math.floor(10*Math.random())]
+	}
+	function generateImage(){
+		var x = document.createElement("img");
+	    x.setAttribute("src", generateSource());
+	    x.setAttribute("width", "50%")
+	    document.body.appendChild(x);		
+	}
+	generateImage()
+</script>
+</body>
+</html>

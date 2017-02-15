@@ -1,0 +1,42 @@
+@import 'config-variables';
+@import 'mixins';
+
+.dark {
+	background-color: $color;
+	padding: 0.3em;
+	
+	p {
+		color: $color-light;
+		
+		span {
+			color: $color;
+			background-color: $color-light;
+		}
+	}
+	&:after{
+	content: 'Test';
+	}
+}
+
+.gradient {
+	@include linear-gradient(left, $color, $color-light);
+	width: 1000px;
+	height: 200px;
+	margin-top: 0.3em;
+}
+
+.theme-light{
+	color: $color;
+	background-color: $color-light;
+	border: 1px solid $color;
+}
+.theme-dark{
+	color:$color-light;
+	background-color: $color;
+	border: 1px solid $color-light;
+}
+.example{
+	width: 200px;
+	height:200px;
+	@extend .theme-dark;
+}

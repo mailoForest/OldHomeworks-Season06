@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table border="6" id="myTable">
+		<caption>Таблица към която се добавят редове с javascript</caption>
+		<tr><th>първа колона</th><th>втора колона</th></tr>
+		<tr><td>някакво съдържание</td><td>друго съдърщание</td></tr>
+		<tr><td>още съдържание</td><td>и още съдържание</td></tr>
+		<tr><td>Баба</td><td>Яга</td></tr>
+		<tr><td>нямям</td><td>куче</td></tr>
+	</table>
+	<button style="margin: 5px" onclick="addNewRow()">Добави нов ред в таблицата</button>
+	<script type="text/javascript">
+		var i = 0, j = 4;
+	
+			function addNewRow() {
+				i++; j++;
+				var table = document.getElementById("myTable");
+			    var row = table.insertRow(j);
+			    var cell1 = row.insertCell(0);
+			    var cell2 = row.insertCell(1);
+			    cell1.innerHTML = "Нова";
+			    cell2.innerHTML = "клетка " + i;
+			}			
+	</script>
+</body>
+</html>

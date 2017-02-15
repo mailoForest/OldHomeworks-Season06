@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+
+header {
+	background: #445566;
+	height: 100px;
+}
+p {
+	height: 100px;
+	background: green;
+	margin: 10px 50px 0px 50px;
+	background-align:left:
+}
+#left-footer {
+	height: 30px;
+	width: 610px;
+	background: #456752;
+	float:left;
+	margin: 10px 5px 20px 50px;
+}
+#right-footer {
+	height: 30px;
+	width: 610px;
+	background: #456752;
+	float: right;
+	margin: 10px 50px 20px 5px;
+}

@@ -1,0 +1,12 @@
+p {
+  color: #11ffff; }
+
+.dark {
+  backfground-color: #11ffff;
+  padding: 0.3em; }
+  .dark p {
+    color: #ffffff; }
+    .dark p span {
+      backfground-color: #ffffff; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Convert weight: kg-ib &amp; ib-kg</title>
+<style type="text/css">
+	body{width: 400px;}
+	div{
+	border: 1px solid;
+	display: block;
+	width: 90%;
+	padding: 0.8em;
+	}
+	button{border-radius: 5px; margin: 5px;}
+	input{width:30%;}
+	output{display: block;}
+</style>
+</head>
+<body>
+	<div>
+		<form action="">
+			<label>Convert </label><input type="text" id="input">
+			<select id="from"><option>kg</option><option>lb</option></select>
+			<select id="to"><option>lb</option><option>kg</option></select>
+			<button type="button" onclick="weight ()">Calculate</button>
+			<output id="output"></output>
+		</form>
+	</div>
+<script type="text/javascript">
+	function weight (){
+		//1kg = 2.20462262 lb
+		var convertable = parseFloat(document.getElementById('input').value);
+		var convertFrom = document.getElementById('from').value;
+		var convertTo = document.getElementById('to').value;
+		if (convertFrom == "kg" && convertTo == "lb") {
+			result = convertable*2.20462262;
+			document.getElementById('output').innerHTML = result + " lb";
+		}
+		if (convertFrom == "lb" && convertTo == "kg") {
+			result = convertable/2.20462262;
+			document.getElementById('output').innerHTML = result + " kg";
+		}
+	}
+</script>
+</body>
+</html>

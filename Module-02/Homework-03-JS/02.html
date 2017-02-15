@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a>
+<button type="button" onclick="numOfAnc()">Check out the number of ancor tags in this document</button>
+<p id="p"></p>
+<script type="text/javascript">
+	function numOfAnc(){
+		var numberOfAncors = document.getElementsByTagName('a');
+		numberOfAncors = numberOfAncors.length;
+		document.getElementById('p').innerHTML = numberOfAncors;
+	}
+</script>
+</body>
+</html>

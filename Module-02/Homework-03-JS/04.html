@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<a>first ancor</a>
+	<a>second ancor</a>
+	<a>third ancor</a>
+	<a>fourth ancor</a>
+	<a>fifth ancor</a>
+	<button type="button" onclick="firstAnc()">Check out the first ancor tag in this document</button>
+	<p id="p"></p>
+	<script type="text/javascript">
+		function firstAnc(){
+			firstAncor = document.getElementsByTagName('a')[0].innerHTML;
+			document.getElementById('p').innerHTML = firstAncor;
+		}
+	</script>
+</body>
+</html>
